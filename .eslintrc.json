@@ -1,0 +1,51 @@
+{
+  "env": {
+    "es6": true,
+    "browser": false,
+    "node": false
+  },
+  "globals": {
+    "Logger": "readonly",
+    "SpreadsheetApp": "readonly", 
+    "UrlFetchApp": "readonly",
+    "Utilities": "readonly",
+    "Session": "readonly",
+    "JSON": "readonly",
+    "Date": "readonly",
+    "String": "readonly",
+    "Object": "readonly",
+    "Array": "readonly",
+    "console": "readonly"
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": ["error", { "args": "none" }],
+    "no-undef": "error",
+    "prefer-const": "error",
+    "no-var": "error",
+    "eqeqeq": ["error", "always"],
+    "curly": ["error", "all"],
+    "brace-style": ["error", "1tbs"],
+    "indent": ["error", 2],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "semi": ["error", "always"],
+    "no-trailing-spaces": "error",
+    "comma-dangle": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+    "space-in-parens": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "max-len": ["warn", { "code": 120, "ignoreComments": true, "ignoreStrings": true }],
+    "camelcase": ["error", { "properties": "always" }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+    "padded-blocks": ["error", "never"]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "telegram-sheets-notification-system",
+  "version": "2.0.0",
+  "description": "Automatically send Telegram notifications when Google Sheets data changes",
+  "main": "src/Code.gs",
+  "scripts": {
+    "lint": "eslint src/**/*.gs --config .eslintrc.json",
+    "lint:fix": "eslint src/**/*.gs --config .eslintrc.json --fix",
+    "validate": "node scripts/validate-config.js",
+    "docs": "jsdoc src/**/*.gs -d docs/api",
+    "deploy": "clasp push",
+    "setup": "node scripts/setup.js"
+  },
+  "keywords": [
+    "telegram",
+    "google-sheets",
+    "notifications",
+    "google-apps-script",
+    "automation"
+  ],
+  "author": "bhqmuhammad",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhqmuhammad/telegram-sheets-notification-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhqmuhammad/telegram-sheets-notification-system/issues"
+  },
+  "homepage": "https://github.com/bhqmuhammad/telegram-sheets-notification-system#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "@types/google-apps-script": "^1.0.83",
+    "eslint": "^8.57.0",
+    "jsdoc": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "clasp": {
+    "scriptId": "",
+    "rootDir": "./src"
+  }
+}
